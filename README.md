@@ -6,13 +6,13 @@
 
 ​		**UESTC-PS** is collected from the Shenzhen Institute for Advanced Study of the University of Electronic Science and Technology of China. The original data is collected from seven cameras, which are successively arranged in the student's dormitory on the way to the classroom. The seven videos are a whole, which forms a complete trajectory. **Figure 1** shows the data set collection scenario.
 
-![avatar](Collection scenario of UESTC-PS.PNG)
+![avatar](imgs/Collection%20scenario%20of%20UESTC-PS.png)
 
 <p align='center'>Figure 1: Collection scenario of UESTC-PS.</p>
 
 ​		Due to the different location of the camera, it also contains many difficulties in PS, such as occlusion, small target samples, and feature differences caused by changes in perspective and attitude. Therefore, UESTC-PS is very challenging to the performance of existing models. In addition, in the collection process of most data sets, multiple cameras are used to shoot at the same scene, and then pedestrian images under different gestures are extracted. The background of the environment where the pedestrian lives changes a little, which is not in line with the changeable camera angles in the actual scene. Therefore, we adopt multiple pedestrian gestures under one track. The collection process of UESTC-PS meet the actual application scenarios perfectly, which is not available in other public data sets at present. Therefore, UESTC-PS can be used for video person search, image person search, single camera tracking, cross-camera tracking and other tasks. As shown in **Figure 2**, an example of the images collected by 7 cameras is given. 
 
-![avatar](imgs/Example of UESTC-PS.PNG)
+![avatar](imgs/Example%20of%20UESTC-PS.png)
 
 <p align='center'>Figure 2: Example of UESTC-PS.</p>
 
@@ -34,7 +34,7 @@
 
 ​	For example, there is an instance in **Figure 3**. In step one, we get that there are three segments in test sets which ID field contains id1, and c1tXXsXX is taken by camera1, c2tXXsXX and c2tYYsYY are taken by camera2. In step two, the frames in which id1 appears for the first time in these segments are frame1xx_i, frame2xx_i, frame2yy_i, respectively. In step three, these segments are grouped according to camera and the different groups are traversed in turn. In each group, segments captured by the camera of this group are treated as queries, and segments not captured by the camera of this group are treated as galleries for these queries. In step four, if duplicate IDs are not traversed, continue to traverse the next ID, otherwise done.
 
-![avatar](imgs/Partitioning strategies for query and gallery.PNG)
+![avatar](imgs/Partitioning%20strategies%20for%20query%20and%20gallery.png)
 
 <p align='center'>Figure 3: Partitioning strategies for query and gallery.</p>
 
