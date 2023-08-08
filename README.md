@@ -6,7 +6,7 @@
 
 ​		**UESTC-PS** is collected from the Shenzhen Institute for Advanced Study of the University of Electronic Science and Technology of China. The original data is collected from seven cameras, which are successively arranged in the student's dormitory on the way to the classroom. The seven videos are a whole, which forms a complete trajectory. **Figure 1** shows the data set collection scenario.
 
-![avatar](imgs/Collection scenario of UESTC-PS.PNG)
+![avatar](Collection scenario of UESTC-PS.PNG)
 
 <p align='center'>Figure 1: Collection scenario of UESTC-PS.</p>
 
