@@ -40,21 +40,23 @@
 
 ## 3. Data Organization
 
+  The dataset package is provided on Baidu Cloud below.
+  
+  [UESTC-PS on Baidu](https://pan.baidu.com/s/1hxP76j3vFbLNLW_6OZph6g?pwd=2n6k).
+
 ​		For UESTC-PS, its organizational structure is as follows:
 
-- UESTC-PS
+- annotations: Notes on training and test sets.
 
-  - annotations: Notes on training and test sets.
-
-    - test: A JSON file, which contains the file path for each test image (relative to the test folder), the test pedestrian ID, the serial number frame_id in the current segment, adjacent image id and image length and width.
-    - train: A JSON file, which contains the file path for each test image (relative to the train folder), the train pedestrian ID, the serial number frame_id in the current segment, adjacent image id and image length and width.
+  - test: A JSON file, which contains the file path for each test image (relative to the test folder), the test pedestrian ID, the serial number frame_id in the current segment, adjacent image id and image length and width.
+  - train: A JSON file, which contains the file path for each test image (relative to the train folder), the train pedestrian ID, the serial number frame_id in the current segment, adjacent image id and image length and width.
   
 - test: A total of 293 video segments are used as test set.
   
   - video segment 1: A video segment of the test set.  Each video segment is named by cntm[sp], where n∈[1,7] and means the camera number. m represents the sequence number of videos and consists of two digits. Considering the length of them, for some sequences, we divide them into several segments and delete some of the frames between them, p represents the number of segments, which is also composed of two digits. For example, the sixth sequence taken by camera 1 is c1t06, the 12th sequence from camera 5 is divided into three segments, c5t12s01, c5t12s02 and c5t12s03.
   
     - gt: Each line represents the bounding box coordinate of the corresponding image.
-      - imgs: A image sequence, which is a continuous scene captured by a camera. Each image is named by a six-digit sequence, such as 000001.jpg
+    - imgs: A image sequence, which is a continuous scene captured by a camera. Each image is named by a six-digit sequence, such as 000001.jpg
   
   - video segment 2
   
@@ -67,7 +69,7 @@
   - video segment 1: A video segment of the test set. Each video segment is named by cntm[sp], where n∈[1,7] and means the camera number. m represents the sequence number of videos and consists of two digits. Considering the length of them, for some segments, we divide them into several segments and delete some of the frames between them, p represents the number of segments, which is also composed of two digits.
   
     - gt: Each line represents the bounding box coordinate of the corresponding image.
-      - imgs: A image sequence, which is a continuous scene captured by a camera. Each image is named by a six-digit sequence, such as 000001.jpg
+    - imgs: A image sequence, which is a continuous scene captured by a camera. Each image is named by a six-digit sequence, such as 000001.jpg
   
   - video segment 2
   
